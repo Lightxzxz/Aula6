@@ -54,5 +54,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Toast.makeText(MainActivity.this, "onCreate!",Toast.LENGTH_SHORT).show();
+        Button btn3 = (Button) findViewById(R.id.button3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,TerceiraTela.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
