@@ -63,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btnTeste = findViewById(R.id.btnTeste);
+        btnTeste.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, QuartaTela.class));
+        });
 
     }
 }
